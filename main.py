@@ -10,8 +10,8 @@ import os
 app = Flask(__name__)
 
 # Telegram Bot Configuration
-BOT_TOKEN = '7422872974:AAH_tR9bSK5vR43ygZ2NlCg3O3TFhK3I9_s'  # Replace with your bot token
-CHAT_ID = '7485493945'  # Replace with your chat ID
+BOT_TOKEN = '8802775389:AAGn7eRc1-v9v0bwxbcYb4Wtxu23jF39zik'  # Replace with your bot token
+CHAT_ID = '8730143288'  # Replace with your chat ID
 
 # HTML Template (same as the original but with Python backend integration)
 HTML_TEMPLATE = """
