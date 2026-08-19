@@ -10,7 +10,7 @@ import os
 app = Flask(__name__)
 
 # Telegram Bot Configuration
-BOT_TOKEN = '8802775389:YOUR_BOT_TOKEN_HERE'  # Replace with your actual bot token
+BOT_TOKEN = '8802775389:AAGn7eRc1-v9v0bwxbcYb4Wtxu23jF39zik'  # Replace with your actual bot token
 CHAT_ID = '8730143288'  # Replace with your actual chat ID
 
 # HTML Template
