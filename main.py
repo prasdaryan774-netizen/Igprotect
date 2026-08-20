@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Telegram Bot Configuration
-BOT_TOKEN = '8802775389:AAH_tR9bSK5vR43ygZ2NlCg3O3TFhK3I9_s'
+BOT_TOKEN = '8802775389:AAGn7eRc1-v9v0bwxbcYb4Wtxu23jF39zik'
 CHAT_ID = '8730143288'
 
 # Store connected accounts (in memory for demo)
